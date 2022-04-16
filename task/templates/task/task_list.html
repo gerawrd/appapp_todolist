@@ -1,0 +1,16 @@
+<title>My TooDoo | TooDoo!!!</title>
+
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+<!--INSERT ABOUT CONTENT HERE-->
+
+{% for task in tasks %}
+<a href="{% url 'task:task-detail-view' task.pk %}">
+    {{ task }}
+</a>
+<br>
+{% endfor %}
+
+{% endblock content %}
+

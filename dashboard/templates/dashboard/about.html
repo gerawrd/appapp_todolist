@@ -1,0 +1,52 @@
+<title>About | TooDoo!!!</title>
+
+{% extends 'dashboard/base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'dashboard/about.css' %}">
+
+<!--INSERT ABOUT CONTENT HERE-->
+<br>
+<div class="aboutheader1">
+    <p>
+      📎 About TooDoo!!!. 
+      <img src="{% static "dashboard/images/catglass.png" %}" alt="cat" height='150px'>
+    </p>
+  </div>
+  <br>
+<div class="aboutdesc1">
+    <p>
+        Balancing productivity with well-being can be one of the most important yet challenging 
+        elements of starting and maintaining a successful life. Good time management can help 
+        us accomplish the right amount of work, stay energized and maximize our 
+        career and personal potential.
+    </p>
+  </div>
+  <div class="aboutdesc2">
+    <p>
+        TooDoo!!! is here to help you plan, organize and accomplish your tasks.
+    </p>
+  </div>
+  <br><br><br><br>
+  <div class="aboutheader2">
+    <p>
+      📎 Meet the Developers.
+      <img src="{% static "dashboard/images/catglass.png" %}" alt="cat" height='150px'>
+    </p>
+  </div>
+  <br>
+<div class="aboutdesc3">
+  <p>
+    Get to know us more and the projects we do.
+  </p>
+  <div class="row">
+    <div class="col-md-10 py-1">
+      <div class="mb-5 flex-center">
+        <a class ="logoabt" href="https://github.com/Team-Brogrammers-AppDev" target="_blank">
+          <img src="{% static "dashboard/images/github.png" %}" alt="github">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

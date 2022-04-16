@@ -1,0 +1,68 @@
+<title>Home | TooDoo!!!</title>
+
+{% extends 'dashboard/base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'dashboard/home.css' %}">
+<!--INSERT HOME CONTENT HERE-->
+<br>
+<div class="homeheader">
+  <p>
+      Hello, let's get organized together.
+      <img src="{% static "dashboard/images/catkyot.png" %}" alt="cat" height='100px'>
+  </p>
+</div>
+<br>
+
+<!--Carousel-Home-->
+<br>
+<div class="container-fluid">
+<div id="carouselhome" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="2" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="3" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static "dashboard/images/plan.png" %}" class="d-block w-100" alt="plan">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "dashboard/images/organize.png" %}" class="d-block w-100" alt="organize">    
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "dashboard/images/accomplish.png" %}" class="d-block w-100" alt="accomplish">    
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "dashboard/images/productive.png" %}" class="d-block w-100" alt="productive">    
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselhome" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselhome" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<br><br><br><br>
+
+<div class="homedeschead">
+  <p>
+    ✅ Stay on track and never miss a due date.
+  </p>
+
+<div class="homedescription">
+<p>
+    TooDoo!!! is here to manage and organize your tasks. 
+    We will help you plan to do something and get it done 
+    to boost your productivity. Let's get organized together!
+    <br><br>
+</p>
+</div>
+<br><br><br><br><br>
+
+{% endblock content %}

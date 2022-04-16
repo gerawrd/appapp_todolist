@@ -1,0 +1,52 @@
+<title>Tips | TooDoo!!!</title>
+
+{% extends 'dashboard/base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'dashboard/tips.css' %}">
+
+<!--INSERT ABOUT CONTENT HERE-->
+<br>
+    <div class="tipsheader">
+        <p>
+        📎 Check this out. 
+        <img src="{% static "dashboard/images/catkyot.png" %}" alt="cat" height='100px'>
+        </p>
+    </div>
+    <br>
+    <div class="tipsdesc">
+        <p>
+            Task management is the skill that is liked and exercised by the talented and 
+            competent to ensure the success and progress of their dedicated tasks. Managing
+            your tasks effectively is extremely important for goals accomplishment. 
+            <br><br> Here are some tips on how to effectively manage your schedule.
+        </p>
+    </div>
+    <br>
+        <div class="row">
+            <div class="col-md-10 py-1">
+                <div class="mb-5 flex-center">
+                    <a class ="content-tips" href="https://www.youtube.com/watch?v=QzX9SG83U8k" target="_blank">
+                        <img src="{% static "dashboard/images/tipimg1.png" %}" alt="tip1" height='300px'>
+                    </a>
+                    <a class ="content-tips" href="https://www.youtube.com/watch?v=iONDebHX9qk" target="_blank">
+                        <img src="{% static "dashboard/images/tipimg2.png" %}" alt="tip2" height='300px'>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 py-1">
+                <div class="mb-5 flex-center">
+                    <a class ="content-tips" href="https://www.youtube.com/watch?v=fbAYK4KQrso" target="_blank">
+                        <img src="{% static "dashboard/images/tipimg3.png" %}" alt="tip3" height='300px'>
+                    </a>
+                    <a class ="content-tips" href="https://www.youtube.com/watch?v=xwsLuxlbY2w" target="_blank">
+                        <img src="{% static "dashboard/images/tipimg4.png" %}" alt="tip4" height='300px'>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    
+        </div>
+{% endblock content %}
