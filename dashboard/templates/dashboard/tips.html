@@ -23,30 +23,90 @@
         </p>
     </div>
     <br>
-        <div class="row">
-            <div class="col-md-10 py-1">
-                <div class="mb-5 flex-center">
-                    <a class ="content-tips" href="https://www.youtube.com/watch?v=QzX9SG83U8k" target="_blank">
-                        <img src="{% static "dashboard/images/tipimg1.png" %}" alt="tip1" height='300px'>
-                    </a>
-                    <a class ="content-tips" href="https://www.youtube.com/watch?v=iONDebHX9qk" target="_blank">
-                        <img src="{% static "dashboard/images/tipimg2.png" %}" alt="tip2" height='300px'>
-                    </a>
-                </div>
+    <!--pictures for modal-->
+    <div class="row">
+        <div class="column">
+    <a href=#first-tip data-bs-toggle="modal" data-bs-target="#first-tip"><img src="{% static "dashboard/images/tipimg1.png" %}" alt="tip1" height='300px'></a>
+</div>
+<div class="column">
+<a href=#second-tip data-bs-toggle="modal" data-bs-target="#second-tip"><img src="{% static "dashboard/images/tipimg2.png" %}" alt="tip1" height='300px'></a>
+   </div>
+</div>
+<div class="row">
+    <div class="column">
+<a href=#third-tip data-bs-toggle="modal" data-bs-target="#third-tip"><img src="{% static "dashboard/images/tipimg3.png" %}" alt="tip1" height='300px'></a>
+</div>
+<div class="column">
+<a href=#fourth-tip data-bs-toggle="modal" data-bs-target="#fourth-tip"><img src="{% static "dashboard/images/tipimg4.png" %}" alt="tip1" height='300px'></a>
+</div>
+</div>
+    
+    <!--MODALS-->
+    <div class="first-tip">
+        <div class="modal fade" id="first-tip" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">BUSY BUT LAZY?</h5>
+            <button align-items="right" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10 py-1">
-                <div class="mb-5 flex-center">
-                    <a class ="content-tips" href="https://www.youtube.com/watch?v=fbAYK4KQrso" target="_blank">
-                        <img src="{% static "dashboard/images/tipimg3.png" %}" alt="tip3" height='300px'>
-                    </a>
-                    <a class ="content-tips" href="https://www.youtube.com/watch?v=xwsLuxlbY2w" target="_blank">
-                        <img src="{% static "dashboard/images/tipimg4.png" %}" alt="tip4" height='300px'>
-                    </a>
-                </div>
+            <div class="modal-body">
+                <iframe width="800" height="500" allowfullscreen src="https://www.youtube.com/embed/QzX9SG83U8k?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
+</iframe>
             </div>
+          </div>
         </div>
-                    
+    </div>
+</div>
+
+<div class="second-tip">
+    <div class="modal fade" id="second-tip" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">10 TIME MANAGEMENT TIPS</h5>
+        <button align-items="right" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+            <iframe width="800" height="500" allowfullscreen src="https://www.youtube.com/embed/iONDebHX9qk?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
+</iframe>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="third-tip">
+    <div class="modal fade" id="third-tip" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ELON MUSK: TIME MANAGEMENT METHOD</h5>
+        <button align-items="right" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <iframe width="800" height="500" allowfullscreen src="https://www.youtube.com/embed/fbAYK4KQrso?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
+</iframe>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="fourth-tip">
+    <div class="modal fade" id="fourth-tip" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">HOW TO STOP WASTING TIME</h5>
+        <button align-items="right" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <iframe width="800" height="500" allowfullscreen src="https://www.youtube.com/embed/xwsLuxlbY2w?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
+</iframe>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
 {% endblock content %}
