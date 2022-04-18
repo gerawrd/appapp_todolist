@@ -36,6 +36,15 @@
           ☰ <img src="{% static "dashboard/images/toodoologo.png" %}" alt="toodoo logo">
         </button>  
             <div class="container">
+              
+                {% if messages %}
+                  {% for message in messages %}
+                    <div class="alert alert-{{message.tags}}">
+                      {{ message }}
+                    </div>
+                  {% endfor %}
+                {% endif %}
+
                 {% block content %}
                 <!--CREATE SEPARATE STYLESHEET FOR CONTENT (CLASS CONTENT) BG IMAGE, ETC...-->
                     <!-- pang-encapsulate sa children (home.html, about.html, etc.)-->

@@ -1,0 +1,9 @@
+  .main {
+    transition: margin-left .5s;
+    padding: 16px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, 
+              rgba(255,255,255,1) 0%, 
+              rgba(33,208,178,1) 100%);
+  }
+  
