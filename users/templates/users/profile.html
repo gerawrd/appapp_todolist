@@ -1,0 +1,13 @@
+<title>Profile | TooDoo!!!</title>
+
+{% extends 'dashboard/base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'users/profile.css' %}">
+
+<div class="profileheader">
+    <h1 class="profile-user">
+      {{ user.username }}
+    </h1>
+</div>
+{% endblock content %}
