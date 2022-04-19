@@ -18,17 +18,14 @@
           <img src="{% static "dashboard/images/toodoologo.png" %}" alt="toodoo logo">
         </div>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="{% url 'home' %}">🏠 Home</a>
+        <a href="{% url 'home' %}">🏠 &nbsp&nbsp Home</a>
+        <a href="{% url 'task:task-list' %}">✅ &nbsp My TooDoo</a>
+        <a href="{% url 'tips' %}">💡 &nbsp&nbsp Tips</a>
+        <a href="{% url 'profile' %}">😺 &nbsp Profile</a>
+        <a href="{% url 'about' %}">📖 &nbsp About</a>
+        <a href="{% url 'help' %}">❓ &nbsp&nbsp&nbsp Help</a>
         <br>
-        <a href="{% url 'task:task-list' %}">✎ My TooDoo</a>
-        <br>
-        <a href="{% url 'tips' %}">💡 TooDoo Tips</a>
-        <br>
-        <a href="#">😺 Profile</a>
-        <br>
-        <a href="{% url 'about' %}">📖 About</a>
-        <br>
-        <a href="{% url 'help' %}">❓ Help</a>
+        <a href="{% url 'logout' %}">↩️ &nbsp Log Out</a>
       </div>
       
       <div id="main">
