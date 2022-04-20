@@ -1,6 +1,24 @@
-.profile-user{
+.account-img{
+    height: 300px;
+    width: 300px;
+}
+.media{
+    padding:3%;
+}
+.text-secondary{
+    padding:10px;
+    margin-left:20%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2F455C;
+}
+.account-heading{
+    padding:10px;
+    margin-left:20%;
     font-size: 50px;
     font-weight: bold;
     color: #2F455C;
-    text-indent: 5%;
+}
+.container{
+    padding:10px;
 }
