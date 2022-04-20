@@ -4,6 +4,8 @@
 }
 .media{
     padding:3%;
+    margin-left: 350px;
+    margin-right: 350px;
 }
 .text-secondary{
     padding:10px;
@@ -21,4 +23,20 @@
 }
 .container{
     padding:10px;
+}
+.mb-4{
+    margin-left: 50%;
+}
+.form-control{
+    margin-left: 50%;
+}
+.requiredfield{
+    margin-left: 50%;
+}
+.form-group{
+    margin-left: 50%;
+    padding: 500px;
+}
+.btn-outline-info{
+    margin-left: 50%;
 }
