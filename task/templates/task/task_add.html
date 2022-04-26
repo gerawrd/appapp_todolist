@@ -1,0 +1,23 @@
+<title>Add Task | TooDoo!!!</title>
+{% extends 'dashboard/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<!--INSERT ABOUT CONTENT HERE-->
+<form method="POST">
+    {% csrf_token %}
+    <fieldset class="form-group">
+        <legend class="border-bottom mb-4">
+            Task Add
+        </legend>
+        {{ form|crispy }}
+    </fieldset>
+    <div class="form-group">
+        <button class="btn btn-outline-info" type="submit">
+            Submit
+        </button>
+    </div>
+</form>
+
+{% endblock content %}
+

@@ -24,19 +24,26 @@
 .container{
     padding:10px;
 }
+
+/* rardiness, 
+    yung nasa ibaba nitong comment na to yan yung 
+    classes ng nasa form na nakalagay sa loob ng 
+    profile.html... hindi ko ma-adjust sakin HAHAHAH */
+
 .mb-4{
-    margin-left: 50%;
+    margin-left: 10%;
 }
 .form-control{
-    margin-left: 50%;
+    margin-left: 10%;
 }
 .requiredfield{
-    margin-left: 50%;
+    margin-left: 10%;
 }
 .form-group{
-    margin-left: 50%;
-    padding: 500px;
+    margin-left: 10%;
+    padding: 50px;
 }
 .btn-outline-info{
-    margin-left: 50%;
+    margin-left: 10%;
 }
+

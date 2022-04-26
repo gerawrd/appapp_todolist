@@ -1,0 +1,28 @@
+<title>My TooDoo | TooDoo!!!</title>
+
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+<!--INSERT ABOUT CONTENT HERE-->
+
+{{ task.title }}
+<br>
+{{ task.description }}
+<br>
+{% if task.complete %}
+    <h1> Task completed. </h1>
+{% else %}
+    <h1> Task incomplete. </h1>
+{% endif %}
+<br>
+{{ task.created }}
+
+<a class="btn-primary" href="{% url 'task:task-update-view' task.pk %}">
+    Update Task
+</a>
+<a class="btn-primary" href="{% url 'task:task-delete-view' task.pk %}">
+    Delete Task
+</a>
+
+{% endblock content %}
+
