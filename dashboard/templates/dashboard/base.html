@@ -19,19 +19,23 @@
         </div>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="{% url 'home' %}">🏠 &nbsp&nbsp Home</a>
-        <a href="{% url 'task:task-list' %}">✅ &nbsp My TooDoo</a>
+        <a href="{% url 'task:task-list' %}">✅ &nbsp&nbsp My TooDoo</a>
         <a href="{% url 'tips' %}">💡 &nbsp&nbsp Tips</a>
-        <a href="{% url 'profile' %}">😺 &nbsp Profile</a>
-        <a href="{% url 'about' %}">📖 &nbsp About</a>
-        <a href="{% url 'help' %}">❓ &nbsp&nbsp&nbsp Help</a>
+        <a href="{% url 'profile' %}">😺 &nbsp&nbsp Profile</a>
+        <a href="{% url 'about' %}">📖 &nbsp&nbsp About</a>
+        <a href="{% url 'help' %}">❓ &nbsp&nbsp Help</a>
         <br>
         <a href="{% url 'logout' %}">↩️ &nbsp Log Out</a>
       </div>
       
       <div id="main">
         <button class="openbtn" onclick="openNav()">
-          ☰ <img src="{% static "dashboard/images/toodoologo.png" %}" alt="toodoo logo">
+          ☰ <img src="{% static "dashboard/images/toodoolight.png" %}" alt="toodoo logo">
         </button>  
+        <div class="userpic">
+        <img height="70px" class="rounded-circle account-img" src="{{ user.profile.image.url }}">
+        </div>
+        <br><br>
             <div class="container">
               {% if messages %}
                   {% for message in messages %}

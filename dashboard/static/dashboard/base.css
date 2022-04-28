@@ -44,7 +44,7 @@
             color: white;
             padding: 10px 15px;
             border: none;
-            color: #2F455C;
+            color: #EFFAEC;
             font-weight: bold;
           }
           
@@ -55,11 +55,18 @@
           #main {
             transition: margin-left .5s;
             padding: 16px;
-            background: rgb(255,255,255);
-            background: radial-gradient(circle, 
-                      rgba(255,255,255,1) 0%, 
-                      rgba(33,208,178,1) 100%);
+            background: rgb(21,139,119);
+            background: radial-gradient(circle,
+             rgba(21,139,119,1) 0%, 
+             rgba(47,69,92,1) 100%);
           }
           .baselogo{
             padding: 50px;
           }
+      .userpic{
+        padding-top: 5px;
+        padding-right: 5px;
+        display: block;
+        float: right;
+      }
+        

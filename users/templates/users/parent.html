@@ -13,12 +13,15 @@
 
   <body>
     <div class="main">
-    <!--rardiness,
-          patanggal na lang sa pagkaka comment yung nasa ibaba nito
-          para gumana yung image na medj mas big HAHAHAH -->
-      <!--<img src="{% static "dashboard/images/toodoolarge.png" %}" alt="toodoo logo">-->
+    <div class="row">
+      <div class="column">
+        <img class="logo" width="350px" src="{% static "dashboard/images/toodoolarge.png" %}" alt="toodoo logo">
+      </div>
+
+      <div class="column">
           {% block content %}
           {% endblock content %}
+      </div>
     </div>     
 
     <!-- Optional JavaScript; choose one of the two! -->

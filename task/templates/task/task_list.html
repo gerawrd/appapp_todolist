@@ -4,10 +4,11 @@
 
 {% block content %}
 <!--INSERT ABOUT CONTENT HERE-->
-
+{% load static %}
+<link rel="stylesheet" href="{% static 'task/task_list.css' %}">
 {% for task in tasks %}
 <a href="{% url 'task:task-detail-view' task.pk %}">
-    {{ task }}
+   {{ task }} <br>
 </a>
 <br>
 {% endfor %}

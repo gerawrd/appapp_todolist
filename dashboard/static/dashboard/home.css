@@ -1,8 +1,8 @@
 
 .homeheader{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
-    color: #2F455C;
+    color: #EFFAEC;
     text-indent: 5%;
 }
 #carouselhome{
@@ -15,13 +15,13 @@
 .homedeschead{
     font-size: 40px;
     font-weight: bold;
-    color: #2F455C;
+    color: #EFFAEC;
     text-indent: 3%;
 }
 .homedescription{
     font-size: 30px;
     font-weight: bold;
-    color: #2F455C;
+    color: #EFFAEC;
     text-indent: 5%;
 }
 .logohome{

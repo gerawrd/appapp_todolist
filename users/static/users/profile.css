@@ -1,4 +1,4 @@
-.account-img{
+/*.account-img{
     height: 300px;
     width: 300px;
 }
@@ -24,12 +24,6 @@
 .container{
     padding:10px;
 }
-
-/* rardiness, 
-    yung nasa ibaba nitong comment na to yan yung 
-    classes ng nasa form na nakalagay sa loob ng 
-    profile.html... hindi ko ma-adjust sakin HAHAHAH */
-
 .mb-4{
     margin-left: 10%;
 }
@@ -45,5 +39,5 @@
 }
 .btn-outline-info{
     margin-left: 10%;
-}
+} */
 
