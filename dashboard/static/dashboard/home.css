@@ -5,10 +5,10 @@
     color: #EFFAEC;
     text-indent: 5%;
 }
-#carouselhome{
+/*#carouselhome{
     height: 40%;
 }
-/*.carousel-inner{
+.carousel-inner{
     height: 100%;
     opacity: 100%;
 }*/
@@ -28,7 +28,7 @@
     height: 720px;
     max-width: 1280px;
   }
-
-  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 50%;
-}
+.container-fluid {
+    width: 70%;
+    height: 70%;
+  }
