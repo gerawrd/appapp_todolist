@@ -69,4 +69,18 @@
         display: block;
         float: right;
       }
+      /* not working responsive body bg*/
+      body {
+        min-height: 100%;
+        transition: margin-left .5s;
+            padding: 16px;
+            background: rgb(21,139,119);
+            background: radial-gradient(circle,
+             rgba(21,139,119,1) 0%, 
+             rgba(47,69,92,1) 100%);
+   }
+   html, body {
+    margin: 0;
+    height: 100%;
+}
         

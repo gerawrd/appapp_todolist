@@ -13,11 +13,22 @@
         {{ form|crispy }}
     </fieldset>
     <div class="form-group">
-        <button class="btn btn-outline-info" type="submit">
+        <button class="btn btn-outline-info" type="submit" id="btnShowMsg" onClick="showMessage()">
             Submit
-        </button>
+        </button>  
     </div>
+
 </form>
+
+<script type="text/javascript">
+    function showMessage() {
+        if(confirm("TASK ADDED SUCCESSFULLY")) {
+    window.location.protocol = "http://127.0.0.1:8000/task/task_list/"
+    return
+}
+    }
+</script>
+
 
 {% endblock content %}
 

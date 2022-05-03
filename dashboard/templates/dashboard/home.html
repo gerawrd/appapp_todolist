@@ -52,10 +52,41 @@
 </div>
 <br><br><br><br>
 
-<!--CALENDAR-->
-<div class="CALENDAR">
-  <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&bgcolor=%237986CB&ctz=Asia%2FManila&showNav=0&showPrint=0&showTabs=0&showTitle=0&src=emVubi5ncmltbUBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ucGhpbGlwcGluZXMjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" style="border-width:0" width="1300" height="950" frameborder="0" scrolling="no"></iframe>
+<div class="buttons">
+  <div class="gitna">
+<a href="#CALENDAR" data-bs-toggle="modal" data-bs-target="#CALENDAR">
+  <button type="button"> OPEN A CALENDAR </button>
+</a>
+<a href="{% url 'task:task-list' %}">
+  <button type="button"> VIEW TASKS </button>
+</a>
+<a href="{% url 'task:task-add-view' %}">
+  <button type="button"> ADD A NEW TASK </button>
+</a>
+  </div>
 </div>
+
+<div class="CALENDAR">
+  <div class="modal fade" id="CALENDAR" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p>TODAY IS <span id='date-time'></span>.</p>
+      <button align-items="right" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&bgcolor=%237986CB&ctz=Asia%2FManila&showNav=0&showPrint=0&showTabs=0&showTitle=0&src=emVubi5ncmltbUBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ucGhpbGlwcGluZXMjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" style="border-width:0" width="1400" height="850" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+  var dt = new Date();
+  document.getElementById('date-time').innerHTML=dt;
+  </script>
+
 
 <div class="homedeschead">
   <p>

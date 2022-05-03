@@ -37,6 +37,7 @@ def task_add_view(request):
     }
     return render(request,'task/task_add.html', context)
 
+
 @login_required
 def task_update_view(request, pk):
     task = get_object_or_404(Task, pk=pk)
