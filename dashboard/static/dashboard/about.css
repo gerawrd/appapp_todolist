@@ -38,10 +38,9 @@
     font-weight: bold;
     color: rgb(255, 255, 255);
     font-size: 30px;
-    display: block;
+    display: flex;
 }
-#devs {
+/*#devs {
     margin: 40px;
-    float: left;
     width: 180px;
-}
+}*/

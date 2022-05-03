@@ -52,14 +52,14 @@
             background-color: transparent;
           }
           
-          #main {
+          /*#main {
             transition: margin-left .5s;
             padding: 16px;
             background: rgb(21,139,119);
             background: radial-gradient(circle,
              rgba(21,139,119,1) 0%, 
              rgba(47,69,92,1) 100%);
-          }
+          }*/
           .baselogo{
             padding: 50px;
           }
@@ -70,14 +70,14 @@
         float: right;
       }
       /* not working responsive body bg*/
-      body {
+      .body {
         min-height: 100%;
         transition: margin-left .5s;
             padding: 16px;
-            background: rgb(21,139,119);
-            background: radial-gradient(circle,
-             rgba(21,139,119,1) 0%, 
-             rgba(47,69,92,1) 100%);
+            background: #0093E9;
+            background: linear-gradient(160deg,
+             #0093E9 0%,
+             #80D0C7 100%);
    }
    html, body {
     margin: 0;
