@@ -83,4 +83,14 @@
     margin: 0;
     height: 100%;
 }
+
+.footer-copyright{
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 18px;
+  color: blanchedalmond;
+}
+.page-footer{
+  background-color: rgb(32, 5, 5);
+}
         

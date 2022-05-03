@@ -32,3 +32,17 @@
     text-indent: 5%;
     padding: 50px;
 }
+.container4::after {
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: table;
+    content: "";
+}
+#devs {
+    margin: 40px;
+    float: left;
+    width: 180px;
+}
